@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Practica1 : MonoBehaviour
+public class Ejercicio13 : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    private int valor = 1000;
+
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
+        Debug.Log(valor);
+        valor = valor - 2;
+
+
     }
 }
