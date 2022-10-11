@@ -311,6 +311,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 710902165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b7dfb2e17a7d92439112cb8e8272ed4, type: 3}
+  m_Script: {fileID: 11500000, guid: 307e6cd32aedece4e8dd00ccaaf99b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arrayDecimales:
+  - 2.3
+  - 3.1
+  - 4
+  - 5.5
+  - 6.9
+  arrayCadenaCaracteres:
+  - Paco
+  - Jose
+  - Miguel
+  - Jesus
+  - Maria
+  arrayBooleanos: 0100000101
+  arrayEnteros1: 0100000001000000010000000100000001000000
+  arrayEnteros2: 060000000700000008000000090000000a000000
