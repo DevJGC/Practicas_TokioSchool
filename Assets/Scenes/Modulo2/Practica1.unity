@@ -311,6 +311,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 710902165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d4cc5fb8d793b9429a2fffced66c7b3, type: 3}
+  m_Script: {fileID: 11500000, guid: b4bf35fc2fcc3b545a30847eaa0c2207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: Jose
+  age: 51
