@@ -311,16 +311,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 710902165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f9cb51f47cda28479792c439696575f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e517e8d9902b114f8c58dbb1048c3e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contador: 0
-  multiplo: 250
-  cubo: {fileID: 1694787811}
-  x: 1
-  y: 1
-  z: 1
-  activate: 1
+  productos:
+  - huevos
+  - pan
+  - leche
+  tipoDeTienda: Tienda de huevos
 --- !u!1 &1694787811
 GameObject:
   m_ObjectHideFlags: 0
