@@ -311,21 +311,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 710902165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d4cc5fb8d793b9429a2fffced66c7b3, type: 3}
+  m_Script: {fileID: 11500000, guid: 39ce663d988875b499780ff374fc1146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombres:
-  - Paco
-  - Pepe
-  - Maria
-  - Jesus
-  - Carmen
-  - Jose
-  - Juan
-  - Pilar
-  - Encarna
-  - Teresa
-  v: 0
+  day: 335
+  mes: 
+  diaSemana: 
+  dia: 0
 --- !u!1 &1694787811
 GameObject:
   m_ObjectHideFlags: 0
