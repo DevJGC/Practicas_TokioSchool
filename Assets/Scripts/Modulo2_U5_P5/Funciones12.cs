@@ -2,17 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class Funciones12 : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    float height = 5;
+    float width = 6;
+    float hypotenuse=0;
+
+    float resultado;
+
+
+    
     void Start()
     {
-        
+
+        calcHypotenuse(height, width, hypotenuse);
+        Debug.Log(resultado);
+
+
+
+
     }
 
-    // Update is called once per frame
-    void Update()
+
+    float calcHypotenuse(float a, float b, float h)
     {
-        
+
+        if (h == 0)
+        {
+            float a_square = Mathf.Pow(a, 2);
+            float b_square = Mathf.Pow(b, 2);
+            resultado = Mathf.Sqrt(a_square + b_square);
+        }
+
+
+
+
+        return resultado;
+
+
     }
+
 }
