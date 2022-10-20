@@ -311,12 +311,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 710902165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46b9e4def886e1646b76cf10a58336b3, type: 3}
+  m_Script: {fileID: 11500000, guid: 3134ebcf478dd6a4d9e520ba82162d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  height: 2
-  width: 7
-  hypotenuse: 0
+  num1: 702
+  num2: 421
 --- !u!1 &1694787811
 GameObject:
   m_ObjectHideFlags: 0
