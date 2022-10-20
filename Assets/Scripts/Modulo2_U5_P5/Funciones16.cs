@@ -2,26 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Funciones15 : MonoBehaviour
+public class Funciones16 : MonoBehaviour
 {
-    // Ejercicio 15 - Calcular el máximo común divisor
+    // Ejercicio 16 - Calcular el mínimo común múltiplo
     [SerializeField] int num1;
     [SerializeField] int num2;
-    int maxComunDivisor;
-  
+    int minComunMultiplo;
+    int MCD; // Máximo Común Divisor
+
     void Start()
-    {   
+    {
         // Llama a la función enviando los valores
-        CalculaMaximoComunDivisor(num1, num2);   
+        CalculaMinimoComunMultiplo(num1, num2);
     }
 
-    // Función para calcular el máximo común divisor
-    int CalculaMaximoComunDivisor(int a, int b)
+    // Función para calcular el mínimo común múltiplo
+    int CalculaMinimoComunMultiplo(int a, int b)
     {
         // Si el primer valor es mayor que el segundo, invierte el orden (cambia a por b)
         if (a > b)
         {
-           int temp = a;
+            int temp = a;
             a = b;
             b = temp;
         }
@@ -30,12 +31,13 @@ public class Funciones15 : MonoBehaviour
         for (int i = 1; i < (a + 1); i++)
         {
             if (a % i == 0 && b % i == 0)
-                maxComunDivisor = i;
+                MCD = i;
         }
 
+        minComunMultiplo = (a * b) / MCD;
+
         // Muestra en consola los valores y el resultado
-        Debug.Log("El máximo común divisor de " + a + " y " + b + " es: " + maxComunDivisor);
-        return maxComunDivisor;
+        Debug.Log("El mínimo común múltiplo de " + a + " y " + b + " es: " + minComunMultiplo);
+        return minComunMultiplo;
     }
 }
-
