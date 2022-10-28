@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Funciones17 : MonoBehaviour
 {
-    // Ejercicio 17 - Mismo ejercicio que el 15 pero con Arrays - Calcular el máximo común divisor
+    // Ejercicio 17 - Mismo ejercicio que el 15 pero con Arrays - Calcular el mÃ¡ximo comÃºn divisor
     [SerializeField] int[] num1;
     [SerializeField] int[] num2;
     int maxComunDivisor;
 
     void Start()
     {
-        // Llama a la función enviando los valores de todas las casillas del Array
+        // Llama a la funciÃ³n enviando los valores de todas las casillas del Array
         for (int n = 0; n < num1.Length; n++)
         {
             CalculaMaximoComunDivisor(num1[n], num2[n]);
@@ -20,7 +20,7 @@ public class Funciones17 : MonoBehaviour
     }
 
       
-    // Función para calcular el máximo común divisor
+    // FunciÃ³n para calcular el mÃ¡ximo comÃºn divisor
     int CalculaMaximoComunDivisor(int a, int b)
     {
         // Si el primer valor es mayor que el segundo, invierte el orden (cambia a por b)
@@ -39,7 +39,7 @@ public class Funciones17 : MonoBehaviour
         }
 
         // Muestra en consola los valores y el resultado
-        Debug.Log("El máximo común divisor de " + a + " y " + b + " es: " + maxComunDivisor);
+        Debug.Log("El mÃ¡ximo comÃºn divisor de " + a + " y " + b + " es: " + maxComunDivisor);
         return maxComunDivisor;
     }
 }
