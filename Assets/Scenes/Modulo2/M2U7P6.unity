@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 142513983}
   - component: {fileID: 142513982}
   - component: {fileID: 142513981}
+  - component: {fileID: 142513984}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -200,13 +201,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142513980}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -46.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &142513984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142513980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b35a2cfc8b34e4788ae7cadf8c7e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contador: 0
+  recordValue: 0
 --- !u!1 &369418964
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +331,6 @@ GameObject:
   - component: {fileID: 1802043708}
   - component: {fileID: 1802043707}
   - component: {fileID: 1802043706}
-  - component: {fileID: 1802043710}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Player
@@ -402,19 +416,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1802043710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1802043705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70f9630c4730903428e2b428f82e2b3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  direccion: 0
 --- !u!1 &2075363056
 GameObject:
   m_ObjectHideFlags: 0
