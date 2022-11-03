@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GestionDeObjetos6 : MonoBehaviour
+public class GestionDeObjetos6_7 : MonoBehaviour
 {
-    // Ejercicio 6 - Pre Ping Pong
+    // Ejercicio 6 y 7 - Pre Ping Pong
+    //[SerializeField] GameObject ball;
 
     int directionX;
     int directionY;
@@ -12,47 +13,63 @@ public class GestionDeObjetos6 : MonoBehaviour
     int direInicial;
 
     int velocity=10;
+    [SerializeField] int lifes=10;
 
 
 
     void Start()
     {
-       directionStar();        
+       // Inicia la bola 
+       directionStart();        
        
     }
 
     
     void Update()
     {
+        // Mueve la bola
         transform.Translate((directionX)*Time.deltaTime*velocity,(directionY)*Time.deltaTime*velocity,0);
           
     }
 
+    // Detecta colisiones con paredes o techo/suelo - Resta una vida en cada choque y resetea a los 10
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Left-Right")
         {
-            Debug.Log("Hay colision con pared");
+            //Debug.Log("Hay colision con pared");
+            // Invierte direccion en X
             directionX = directionX * -1;
 
         }
 
         if (collision.gameObject.tag == "Up-Down")
         {
-            Debug.Log("Hay colision con techo");
+            //Debug.Log("Hay colision con techo");
+            // Invierte direccion en Y
             directionY = directionY * -1;
+        }
+
+        // Resta una vida y si llega a 0 resetea
+        lifes--;
+        if(lifes==0)
+        {
+            directionStart();          
         }
    
     }
 
 
-
-    void directionStar()    
+    // Inicia la bola en una direccion aleatoria y mira si no tiene vida, en cuyo caso resetea
+    void directionStart()    
     {
-        
-        direInicial=Random.Range(1,5);
+        if (lifes==0)
+        {
+            transform.position = new Vector3(0,0,0);
+            lifes=10;
+        }
 
-        Debug.Log(direInicial);
+        direInicial=Random.Range(1,5);
 
         switch (direInicial)
         {
@@ -76,7 +93,7 @@ public class GestionDeObjetos6 : MonoBehaviour
                 break;
             
             default:
-            Debug.Log("No hay direccion!!");
+           // Debug.Log("No hay direccion!!");
             break;
 
         }  

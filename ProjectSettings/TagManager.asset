@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Up-Down
   - Left-Right
+  - bola
   layers:
   - Default
   - TransparentFX
